@@ -1,0 +1,17 @@
+ <!-- Bootstrap core JavaScript -->
+ <script src="/assets/vendor/jquery/jquery.min.js"></script>
+ <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+{% if site.theme_settings.footer_text %}
+<footer class="site-footer">
+    <p class="text">{{ site.theme_settings.footer_text }}</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                {% include icons.html %}
+                </ul>
+            </div>
+</footer>
+{% endif %}
+
+
