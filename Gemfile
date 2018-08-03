@@ -1,2 +1,4 @@
-gem 'wdm', '~> 0.1.1' if Gem.win_platform?
+source "https://rubygems.org"
 
+gem "jekyll", "~> 3.6.0"
+gem "jekyll-assets"
