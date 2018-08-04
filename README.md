@@ -1,5 +1,5 @@
 ## chapter.site.template 🚪 
-![:octocat:](https://assets-cdn.github.com/images/icons/emoji/octocat.png ":octocat:") ![:octocat:](http://u.cubeupload.com/boqsc/5bdtest.png ":octocat:")The Project has been started by Juuso (jeukku) in order to form a template example that could be used across The Zeitgeist Movement Chapters' websites hosted on any GitHub Repository.
+![:octocat:](http://u.cubeupload.com/boqsc/ee2test.png ":octocat:")The Project has been started by Juuso (jeukku) in order to form a template example that could be used across The Zeitgeist Movement Chapters' websites hosted on any GitHub Repository.
 
 
 ## The Project's main structure
