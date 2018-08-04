@@ -15,11 +15,9 @@ that could be used across The Zeitgeist Movement Chapters' websites hosted on an
 | 📂pages | These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse.  |
 | 📄_config.yml | Stores configuration data. Many of these options can be specified from the command line executable but it’s easier to specify them here so you don’t have to remember them.
   
-🐢`yo bro where is my home.` https://jekyllrb.com/docs/structure/  
-
 <details> 
-  <summary>What do other turtles do</summary>
-
+  <summary> 🐢 <code>yo bro where is my home.</code> https://jekyllrb.com/docs/structure/</summary>
+  What do other turtles do:
 🐢`sometimes I travel home from far away.`  
 🐢`when I dream, I dream about a place I call home.`  
 🐢`I wish I was home, I need to water those lovely flowers.`  
