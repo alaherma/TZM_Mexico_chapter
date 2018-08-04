@@ -1,9 +1,9 @@
 ## chapter.site.template 🚪 
 ![:octocat:](https://assets-cdn.github.com/images/icons/emoji/octocat.png ":octocat:")The Project has been started by Juuso (jeukku) in order to form a template example that could be used across The Zeitgeist Movement Chapters' websites hosted on any GitHub Repository.
 
-## The Project's main structure description
+## The Project's main structure
 
-| [![Jekyll Logo](http://u.cubeupload.com/boqsc/jekyllsmall.png)](https://jekyllrb.com/docs/home/) | Yekyll structure  | |
+| [![Jekyll Logo](http://u.cubeupload.com/boqsc/jekyllsmall.png)](https://jekyllrb.com/docs/home/) | Yekyll structure description  | |
 |:-:|-|-|
 | 📂_includes | These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse. ❗️🚩 The liquid tag`{% include file.ext %}` can be used to include the partial in`_includes/file.ext`. |
 | 📂_layouts | These are the templates that wrap posts. Layouts are chosen on a post-by-post basis in the [YAML Front Matter](http://127.0.0.1:4000/docs/frontmatter/), which is described in the next section. ❗️🚩 The liquid tag `{{ content }}` is used to inject content into the web page. |
