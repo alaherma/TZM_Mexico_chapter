@@ -17,7 +17,6 @@ that could be used across The Zeitgeist Movement Chapters' websites hosted on an
   
 <details> 
   <summary> 🐢 <code>yo bro where is my home.</code> https://jekyllrb.com/docs/structure/</summary>
-  What do other turtles do:
 🐢`sometimes I travel home from far away.`  
 🐢`when I dream, I dream about a place I call home.`  
 🐢`I wish I was home, I need to water those lovely flowers.`  
