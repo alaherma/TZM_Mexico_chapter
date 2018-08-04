@@ -14,7 +14,7 @@ that could be used across The Zeitgeist Movement Chapters' websites hosted on an
 | 📂assets | The place where Images, Stylesheets are stored |
 | 📂pages | These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse.  |
 | 📄_config.yml | Stores configuration data. Many of these options can be specified from the command line executable but it’s easier to specify them here so you don’t have to remember them.
-| 📄 index.html | The main GitHub Pages serving file, this is the main file GitHub serves after _config.yml is finished rendering.
+| 📄 index.md | The main GitHub Pages serving file, this is the main file GitHub serves after _config.yml is finished rendering.
  
  
  
