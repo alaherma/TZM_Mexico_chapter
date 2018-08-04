@@ -3,7 +3,7 @@
 
 ## The Project's main structure
 
-| [![Jekyll Logo](http://u.cubeupload.com/boqsc/jekyll.png)](http://127.0.0.1:4000/) | Yekyll structure  | |
+| [![Jekyll Logo](http://u.cubeupload.com/boqsc/jekyll.png)](https://jekyllrb.com/docs/home/) | Yekyll structure  | |
 |:-:|-|-|
 | 📂_includes | These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse. ❗️🚩 The liquid tag`{% include file.ext %}` can be used to include the partial in`_includes/file.ext`. |
 | 📂_layouts | These are the templates that wrap posts. Layouts are chosen on a post-by-post basis in the [YAML Front Matter](http://127.0.0.1:4000/docs/frontmatter/), which is described in the next section. ❗️🚩 The liquid tag `{{ content }}` is used to inject content into the web page. |
@@ -13,7 +13,7 @@
 | 📂pages | These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse.  |
 | 📄_config.yml | Stores configuration data. Many of these options can be specified from the command line executable but it’s easier to specify them here so you don’t have to remember them.
  |
-🐢`yo bro where is my home.` http://127.0.0.1:4000/docs/structure/
+🐢`yo bro where is my home.` https://jekyllrb.com/docs/structure/
 🐢`sometimes I travel home from far away.`
 🐢`when I dream, I dream about a place I call home.`
 🐢`I wish I was home, I need to water those lovely flowers.`
