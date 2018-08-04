@@ -13,34 +13,35 @@
 | 📂pages | These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse.  |
 | 📄_config.yml | Stores configuration data. Many of these options can be specified from the command line executable but it’s easier to specify them here so you don’t have to remember them.
  |
+ 
+  
 🐢`yo bro where is my home.` https://jekyllrb.com/docs/structure/  
 🐢`sometimes I travel home from far away.`  
-🐢`when I dream, I dream about a place I call home.`
-🐢`I wish I was home, I need to water those lovely flowers.`
-🐢`I'm sad knowing  that I'm far away from home.`
-🐢`They said It will be few more days and I'll be back home.`
-🐢`I'm studying household management, once I'm back home.`
-🐢`the coldest winters won't break my shell, homesick I'm.`
-🐢`I could smell the trees, they are familiar, coming home.`
-🐢`I hear, I tap I'm comming back home.`
-🐢`my feet is hurt, but i'll come back home.`
-🐢`saw a place to rest, soon to be home.`
-🐢`can we have something to eat, please take me home.`
-🐢`wouldn't that be great to visit some familiar place.`
-🐢`the grass is greener when we comeback.`
-🐢`could you tell me the direction of home.`
-🐢`the wisdom, it rests where I lived.`
-🐢`it was hard to leave home.`
-🐢`finally, a path to look forward home.`
-🐢`depressing, to be so far away from home.`
-🐢`I'm an old traveler, home I'm comming.`
-🐢`I felt great, until I realised how far from home I'm.`
-🐢`Hearing those stories, made me homesicked.`
-🐢`the temporal the life is, I'l better come home soon.`
-🐢`If the wisdom had a word, it would be near home.`
-🐢`once I fought and now I'm wiser as I get closer... home.`
-🐢`let's go home and find the truth of train of though.`
-🐢`It's here, it is near, near - it's home.`
-🐢`I'm turtle, but I know when to come home`
-
-
+🐢`when I dream, I dream about a place I call home.`  
+🐢`I wish I was home, I need to water those lovely flowers.`  
+🐢`I'm sad knowing  that I'm far away from home.`  
+🐢`They said It will be few more days and I'll be back home.`  
+🐢`I'm studying household management, once I'm back home.`  
+🐢`the coldest winters won't break my shell, homesick I'm.`  
+🐢`I could smell the trees, they are familiar, coming home.`  
+🐢`I hear, I tap I'm comming back home.`  
+🐢`my feet is hurt, but i'll come back home.`  
+🐢`saw a place to rest, soon to be home.`  
+🐢`can we have something to eat, please take me home.`  
+🐢`wouldn't that be great to visit some familiar place.`  
+🐢`the grass is greener when we comeback.`  
+🐢`could you tell me the direction of home.`  
+🐢`the wisdom, it rests where I lived.`  
+🐢`it was hard to leave home.`  
+🐢`finally, a path to look forward home.`  
+🐢`depressing, to be so far away from home.`  
+🐢`I'm an old traveler, home I'm comming.`  
+🐢`I felt great, until I realised how far from home I'm.`  
+🐢`Hearing those stories, made me homesicked.`  
+🐢`the temporal the life is, I'l better come home soon.`  
+🐢`If the wisdom had a word, it would be near home.`  
+🐢`once I fought and now I'm wiser as I get closer... home.`  
+🐢`let's go home and find the truth of train of though.`  
+🐢`It's here, it is near, near - it's home.`  
+🐢`I'm turtle, but I know when to come home`  
+  
