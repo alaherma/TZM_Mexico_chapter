@@ -12,8 +12,6 @@
 | 📂assets | **Can someone take the quest** ❔ We need to fill this interesting space. |
 | 📂pages | These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse.  |
 | 📄_config.yml | Stores configuration data. Many of these options can be specified from the command line executable but it’s easier to specify them here so you don’t have to remember them.
- |
- 
   
 🐢`yo bro where is my home.` https://jekyllrb.com/docs/structure/  
 🐢`sometimes I travel home from far away.`  
