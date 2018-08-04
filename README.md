@@ -7,9 +7,9 @@ that could be used across The Zeitgeist Movement Chapters' websites hosted on an
 
 | [![Jekyll Logo](http://u.cubeupload.com/boqsc/jekyllsmall.png)](https://jekyllrb.com/docs/home/) | Yekyll structure description  | |
 |:-:|-|-|
-| 📂_includes | These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse. ❗️🚩 The liquid tag`{% include file.ext %}` can be used to include the partial in`_includes/file.ext`. |
-| 📂_layouts | These are the templates that wrap posts. Layouts are chosen on a post-by-post basis in the [YAML Front Matter](http://127.0.0.1:4000/docs/frontmatter/), which is described in the next section. ❗️🚩 The liquid tag `{{ content }}` is used to inject content into the web page. |
-| 📂_posts | Your dynamic content, so to speak. ❗️🚩 The naming convention of these files is important, and must follow the format: `YEAR-MONTH-DAY-title.MARKUP`. |
+| 📂_includes | These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse. <br>❗️🚩 The liquid tag`{% include file.ext %}` can be used to include the partial in`_includes/file.ext`. |
+| 📂_layouts | These are the templates that wrap posts. Layouts are chosen on a post-by-post basis in the [YAML Front Matter](http://127.0.0.1:4000/docs/frontmatter/), which is described in the next section. <br>🚩 The liquid tag `{{ content }}` is used to inject content into the web page. |
+| 📂_posts | Your dynamic content, so to speak. <br>❗️ The naming convention of these files is important, and must follow the format: `YEAR-MONTH-DAY-title.MARKUP`. |
 | 📂_sections | **Can someone take the quest** ❔ We need to fill this. |
 | 📂assets | **Can someone take the quest** ❔ We need to fill this interesting space. |
 | 📂pages | These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse.  |
