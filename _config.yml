@@ -32,3 +32,5 @@ google_analytics:
 
 plugins: [ jekyll-assets ]
 collections: [sections]
+
+excerpt_separator: "<!--more-->"
