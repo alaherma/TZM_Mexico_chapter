@@ -33,4 +33,12 @@ plugins: [ jekyll-assets, jekyll-seo-tag ]
 collections: [sections]
 
 excerpt_separator: "<!--more-->"
+
+# if true, post excerpts will be shown in home page
 show_posts_on_homepage: true
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
