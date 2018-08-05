@@ -19,6 +19,28 @@ body {
   -o-background-size: cover;
 }
 
+.posts {
+	margin-top: 50px;	
+}
+
+.posts .card {
+	font-size: 100%;
+	padding: 20px;
+}
+
+.posts .card .meta {
+	font-size: 100%;
+	color: #6c757d!important;
+}
+
+.box-shadow {
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+.post-link {
+  color: #343a40!important;
+}
+
 .card {
   height: 100%;
 }

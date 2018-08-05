@@ -34,3 +34,4 @@ plugins: [ jekyll-assets ]
 collections: [sections]
 
 excerpt_separator: "<!--more-->"
+show_posts_on_homepage: true
