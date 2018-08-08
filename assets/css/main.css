@@ -41,6 +41,10 @@ body {
   color: #343a40!important;
 }
 
+.toc-entry a {
+  color: #343a40!important;
+}
+
 .card {
   height: 100%;
 }

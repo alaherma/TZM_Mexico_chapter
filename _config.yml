@@ -1,5 +1,5 @@
-title: Your awesome title
-subtitle: Your awesome subtitle
+title: The Zeitgeist Movement
+subtitle: Shire chapter
 description: >- # this means to ignore newlines until "baseurl:"
   Template for the Zeigeist Movement Chapter site.
 author: Zeitgeist movement
@@ -29,7 +29,7 @@ twitter_url:
 # Google Analytics Tracking ID goes here:
 google_analytics:
 
-plugins: [ jekyll-assets, jekyll-seo-tag ]
+plugins: [ jekyll-assets, jekyll-seo-tag, jekyll-toc ]
 collections: [sections]
 
 excerpt_separator: "<!--more-->"
