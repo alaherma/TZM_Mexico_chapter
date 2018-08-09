@@ -9,7 +9,6 @@ body {
   }
 }
 
-
 .site-header {
   height: 50vh;
   min-height: 200px;
@@ -17,6 +16,31 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+.events {
+	margin-top: 20px;	
+}
+
+.event-title {
+	margin-top: 0px;
+}
+
+.event-header .event-link {
+	color: #343a40!important;
+}
+
+.event-header {
+  height: 50vh;
+  min-height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: contain;
+  -o-background-size: cover;
+}
+
+.event-image {
+	width: 100%;
 }
 
 .posts {

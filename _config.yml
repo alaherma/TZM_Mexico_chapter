@@ -30,8 +30,12 @@ twitter_url:
 google_analytics:
 
 plugins: [ jekyll-assets, jekyll-seo-tag, jekyll-toc ]
-collections: [sections]
 
+collections: 
+    events:
+        output: true
+
+        
 excerpt_separator: "<!--more-->"
 
 # if true, post excerpts will be shown in home page
@@ -42,3 +46,4 @@ defaults:
       path: "assets/img"
     values:
       image: true
+      
