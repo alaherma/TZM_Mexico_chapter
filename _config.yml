@@ -1,9 +1,8 @@
-title: Your awesome title
-subtitle: Your awesome subtitle
+title: The Zeitgeist Movement
+subtitle: Shire chapter
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the demo site for a Jekyll theme version of
-  HTML5 UP's sleek, responsive site template Prologue.
-author: Your Incredible Name
+  Template for the Zeigeist Movement Chapter site.
+author: Zeitgeist movement
 email: your-email@example.com
 avatar: /assets/images/avatar.jpg
 
@@ -30,5 +29,21 @@ twitter_url:
 # Google Analytics Tracking ID goes here:
 google_analytics:
 
-plugins: [ jekyll-assets ]
-collections: [sections]
+plugins: [ jekyll-assets, jekyll-seo-tag, jekyll-toc ]
+
+collections: 
+    events:
+        output: true
+
+        
+excerpt_separator: "<!--more-->"
+
+# if true, post excerpts will be shown in home page
+show_posts_on_homepage: true
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+      

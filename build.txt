@@ -1,0 +1,2 @@
+bundle install --path .vendor/bundle
+GEM_PATH=${GEM_PATH}:.vendor/bundle/ruby/2.5.0 bundle exec jekyll
