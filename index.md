@@ -12,5 +12,5 @@ postnav_subtitle: "Shire Chapter"
 header_image: "/assets/img/home-bg.jpg"
 
 # if header height is reduced
-slim_header: false
+slim_header: true
 ---
