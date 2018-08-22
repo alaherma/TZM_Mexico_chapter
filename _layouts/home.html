@@ -1,12 +1,15 @@
 ---
 layout: default
 ---
+  {% if site.show_events_on_homepage %}
   {% include events.html %}
+  {% endif %}
 
   {% if site.show_posts_on_homepage %}
 	<!-- POSTS -->
   <div class="row mb-2 posts">
     {% for post in site.posts %}
+    {% if post.hidden==false %}
     <div class="col-md-6">
         
 	    <div class="card mb-4 box-shadow h-md-250 post-teaser">
@@ -35,6 +38,7 @@ layout: default
 	          </div>
 	    </div>
 	</div>
+	{% endif %}
     {% endfor %}
   </div>
 
