@@ -4,4 +4,4 @@ _site/
 .jekyll-metadata
 /.project
 /Gemfile.lock
-/.vendor/
+/.vendor
