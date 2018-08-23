@@ -9,7 +9,7 @@
 		    {% if counter < 1 or site.multiple_events_shown %}
 				<!-- Header with Background Image -->
 				<header class="event-header card box-shadow">
-			      <h1 class="event-title display-3 text-center"><a class="event-link" href="{{ e.url }}">{{ e.title }}</a></h1>
+			      <h1 class="event-title display-3 text-center"><a class="event-link" href="{{ site.baseurl }}{{ e.url }}">{{ e.title }}</a></h1>
 				  <div class="container">
 				    <div class="row align-items-center">
 				      <div class="col-lg-12">
