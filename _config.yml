@@ -1,14 +1,26 @@
+# site title
 title: The Zeitgeist Movement
+
+# site subtitle
 subtitle: Shire chapter
+
+# site description
 description: >- # this means to ignore newlines until "baseurl:"
   Template for the Zeigeist Movement Chapter site.
+
+# site author
 author: Zeitgeist movement
+
+# site contact email
 email: your-email@example.com
+
+# site avatar
 avatar: /assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
+
 
 assets:
     sources:
@@ -35,7 +47,7 @@ collections:
     events:
         output: true
 
-        
+# where to cut a page when showing only excerpt
 excerpt_separator: "<!--more-->"
 
 # if true, post excerpts will be shown in home page
