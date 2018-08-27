@@ -3,9 +3,73 @@ body {
   padding-top: 54px;
 }
 
+@media (min-width: 176px) {
+  .site-header-slim h1 {
+	font-size: 1.5rem;
+	margin-top: 100px;
+  }
+
+  .site-header h1 {
+	font-size: 2.0rem;	
+	margin-top: 150px;
+  }
+
+  .site-header h2 {
+	font-size: 1.5rem;	
+  }
+}
+
+@media (min-width: 576px) {
+  .site-header-slim h1 {
+	font-size: 2.5rem;
+  }
+
+  .site-header h1 {
+	font-size: 2.5rem;	
+	margin-top: 150px;
+  }
+
+  .site-header h2 {
+	font-size: 2.0rem;	
+  }
+}
+
+@media (min-width: 768px) {
+  .site-header-slim h1 {
+	font-size: 2.5rem;	
+  }
+
+  .site-header h1 {
+	font-size: 3.5rem;	
+  }
+
+  .site-header h2 {
+	font-size: 3.0rem;	
+  }
+}
+
 @media (min-width: 992px) {
-  body {
-    padding-top: 56px;
+  .site-header-slim h1 {
+	font-size: 3.0rem;	
+  }
+
+  .site-header h1 {
+	font-size: 4.5rem;	
+	margin-top: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-header-slim h1 {
+	font-size: 3.5rem;	
+  }
+
+  .site-header h1 {
+	font-size: 4.5rem;	
+  }
+
+  .site-header h2 {
+	font-size: 4.0rem;	
   }
 }
 
@@ -25,10 +89,6 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-}
-
-.site-header-slim h1 {
-	font-size: 3.5rem;	
 }
 
 .site-header-slim h2 {
