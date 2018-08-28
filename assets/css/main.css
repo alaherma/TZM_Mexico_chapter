@@ -6,7 +6,6 @@ body {
 @media (min-width: 176px) {
   .site-header-slim h1 {
 	font-size: 2.0rem;
-	margin-top: 60px;
   }
 
   .site-header-slim h2 {
@@ -15,7 +14,6 @@ body {
 
   .site-header h1 {
 	font-size: 2.0rem;	
-	margin-top: 150px;
   }
 
   .site-header h2 {
@@ -34,7 +32,6 @@ body {
 
   .site-header h1 {
 	font-size: 2.5rem;	
-	margin-top: 150px;
   }
 
   .site-header h2 {
@@ -45,7 +42,6 @@ body {
 @media (min-width: 768px) {
   .site-header-slim h1 {
 	font-size: 2.2rem;	
-	margin-top: 60px;
   }
 
   .site-header-slim h2 {
@@ -68,7 +64,6 @@ body {
 
   .site-header h1 {
 	font-size: 4.5rem;	
-	margin-top: 100px;
   }
 }
 
@@ -89,6 +84,14 @@ body {
 .site-header {
   height: 50vh;
   min-height: 200px;
+  margin-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -98,6 +101,14 @@ body {
 .site-header-slim {
   height: 10rem;
   min-height: 100px;
+  margin-top: 60px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
