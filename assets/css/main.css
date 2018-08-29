@@ -4,7 +4,11 @@ body {
  }
 
 .container {
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container h1, .container h2 {
+    font-family: 'Fjalla One', sans-serif;
 }
 
 @media (min-width: 176px) {
@@ -120,11 +124,15 @@ body {
 }
 
 .site-header-slim h1 {
-      font-weight: 700;
+      font-weight: 400;
+}
+
+.site-header-slim h2 {
+      font-weight: 400;
 }
 
 .site-header h1 {
-      font-weight: 700;
+      font-weight: 400;
 }
 
 .events {

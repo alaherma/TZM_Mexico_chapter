@@ -21,7 +21,7 @@ avatar: /assets/images/avatar.jpg
 footer_text: The Zeitgeist Movement
 
 #google font
-google_fonts: "Source+Serif+Pro"
+google_fonts: "Fjalla+One|Roboto"
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
