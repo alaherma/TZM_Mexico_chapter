@@ -1,3 +1,5 @@
+	{% include base.html %}
+	
 	<div class="events">
 	{% assign sortedEvents = site.events | sort: 'enddate' %}
 	{% assign counter = 0 | integer %}
@@ -9,11 +11,11 @@
 		    {% if counter < 1 or site.multiple_events_shown %}
 				<!-- Header with Background Image -->
 				<header class="event-header card box-shadow">
-			      <h1 class="event-title display-3 text-center"><a class="event-link" href="{{ site.baseurl }}{{ e.url }}">{{ e.title }}</a></h1>
+			      <h1 class="event-title display-3 text-center"><a class="event-link" href="{{ base }}{{ e.url }}">{{ e.title }}</a></h1>
 				  <div class="container">
 				    <div class="row align-items-center">
 				      <div class="col-lg-12">
-				      	<img class="event-image" src="{{ site.baseurl }}{{ e.header_image }}" />		      	
+				      	<img class="event-image" src="{{ base }}{{ e.header_image }}" />		      	
 				        <h2 class="display-3 text-center text-white mt-4">{{ e.subtitle }}</h2>
 				      </div>
 				    </div>

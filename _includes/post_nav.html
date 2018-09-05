@@ -1,6 +1,6 @@
 	<style>
 	.site-header{% if page.slim_header %}-slim{% endif %} {
-	  background-image: url('{{ site.baseurl }}{{ page.header_image }}');
+	  background-image: url('{{ base }}{{ page.header_image }}');
 	}
 	</style>
 
@@ -13,7 +13,7 @@
 	        <h1 class="display-3 text-center text-white">{{ page.postnav_title }}</h1>
 	        <h2 class="display-3 text-center text-white">{{ page.postnav_subtitle }}</h2>
 	        {% if page.slim_header==false  %}
-	        <div class="text-center display-3"><a class="btn btn-info" href="{{ site.baseurl }}/about">LEARN MORE</a></div>
+	        <div class="text-center display-3"><a class="btn btn-info" href="{{ base }}/about">LEARN MORE</a></div>
 	        {% endif %}
 	      </div>
 	    </div>
