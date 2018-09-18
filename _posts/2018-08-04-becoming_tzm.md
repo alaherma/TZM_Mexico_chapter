@@ -2,7 +2,7 @@
 layout: post
 
 # post title
-title: Becoming The Zeitgeist Movement
+title: Becoming TZM
 
 # post author
 author: Juuso
