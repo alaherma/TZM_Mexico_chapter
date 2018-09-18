@@ -13,6 +13,9 @@ body {
 
 .alert {
 	margin-top: 0px;	
+	width: 100%;
+	text-align: center;
+	font-size: 140%;
 }
 
 @media (min-width: 176px) {
