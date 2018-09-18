@@ -28,7 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # View an message that will be show on every page
-show_alert: false
+show_alert: true
 
 # Alert text that will be show on every page
 alert_text: This is currently an example template page. TZMCommunity template engine is a way to create sites that are well performing and easy to setup. Check out docs here <a href="https://tzmcommunity.github.io/docs/">https://tzmcommunity.github.io/docs/</a>
