@@ -25,7 +25,7 @@ google_fonts: "Fjalla+One|Roboto"
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://template.tzm.community" # the base hostname & protocol for your site
 
 # View an message that will be show on every page
 show_alert: true
@@ -53,7 +53,7 @@ twitter_url:
 # Google Analytics Tracking ID goes here:
 google_analytics:
 
-plugins: [ jekyll-assets, jekyll-seo-tag, jekyll-toc ]
+plugins: [ jekyll-assets, jekyll-seo-tag, jekyll-toc, jekyll-sitemap ]
 
 collections: 
     events:
