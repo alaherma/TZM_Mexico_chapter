@@ -14,18 +14,36 @@
 	        {% assign name_page = "" %}
 	        
 	        {% for node in site.pages %}
-	        {% if node.title and node.hide != true %}
+	        {% if node.title and node.hide != true and node.parentid == None %}
 	        {% if name_page contains node.title %}
 	        {% else %}
-	        	{% if node.url == page.url %} 
-	        	<li class="nav-item active">
+				{% if node.menuid != None %}
+					<li class="dropdown nav-item">
+						<a href="{{base}}{{node.url}}" data-toggle="dropdown" class="nav-link dropdown-toggle">
+							{{ node.title }}
+						</a>
+
+		                <ul class="dropdown-menu">
+						{% for cnode in site.pages %}
+					        {% if node.menuid != None cnode.title and cnode.hide != true and cnode.parentid == node.menuid %}
+								<li><a class="nav-link" href="{{ base }}{{ cnode.url }}">{{ cnode.title }}</a></li>
+					        {% endif %}
+				        {% endfor %} 		
+						</ul>
+                
+					</li>
 				{% else %}
-    	    	<li class="nav-item">
-	        	{% endif %}
-	            <a class="nav-link" href="{{ base }}{{ node.url }}">
-	                {{ node.title }}
-	            </a>
-	        </li>
+		        	{% if node.url == page.url %} 
+		        	<li class="nav-item active">
+					{% else %}
+	    	    	<li class="nav-item">
+		        	{% endif %}
+			            <a class="nav-link" href="{{ base }}{{ node.url }}">
+			                {{ node.title }}
+			            </a>
+			        </li>
+				{% endif %}
+				
 	        {% endif %}
 	        {% assign name_page = node.title | append: name_page %}
 	        {% endif %}
@@ -35,5 +53,4 @@
        </div>
      </div>
    </nav>
-    
-        
+ 
