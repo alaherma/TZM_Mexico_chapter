@@ -8,7 +8,7 @@ title: Becoming TZM
 author: Juuso
 
 # hide post
-hidden: false
+hide: false
 ---
 
 >Sometimes the slightest things change the directions of our lives, the merest breath of a circumstance, a random moment that connects like a meteorite striking the earth. Lives have swiveled and changed direction on the strength of a chance remark. 

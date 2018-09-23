@@ -7,7 +7,7 @@
 	{% for e in sortedEvents %}
 	    {% capture currentDate %}{{ 'now' | date: "%Y%m%d-%R" | strip }}{% endcapture %}
 
-	    {% if e.enddate > currentDate and e.hidden==false %}	
+	    {% if e.enddate > currentDate and e.hide==false %}	
 		    {% if counter < 1 or site.multiple_events_shown %}
 				<!-- Header with Background Image -->
 				<header class="event-header card box-shadow">
