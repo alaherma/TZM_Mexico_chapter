@@ -53,7 +53,7 @@ twitter_url:
 # Google Analytics Tracking ID goes here:
 google_analytics:
 
-plugins: [ jekyll-assets, jekyll-seo-tag, jekyll-toc, jekyll-sitemap ]
+plugins: [ jekyll-assets, jekyll-seo-tag, jekyll-toc, jekyll-sitemap, jekyll-feed ]
 
 collections: 
     events:
