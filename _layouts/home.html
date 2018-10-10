@@ -14,7 +14,11 @@ layout: default
   <div class="row mb-2 posts">
     {% for post in site.posts %}
     {% if post.hide==false %}
-    <div class="col-md-6">
+	{% if site.posts_two_col %}
+    <div class="col-md-6 posts_row">
+  	{% else %}
+    <div class="col-md-12 posts_row">
+	{% endif %}
         
 	    <div class="card mb-4 box-shadow h-md-250 post-teaser">
 	      {% if post.thumbnail %} 
@@ -22,7 +26,7 @@ layout: default
 	         <img src="/{{ post.thumbnail }}">
 	      </div>
 	      {% endif %}
-  		 	<header>
+  		 	<header class="posts_item_header">
 	      	   <h3 class="mb-0">
 	              <a class="post-link" href="{{ post.url }}">
 	                {{ post.title }}

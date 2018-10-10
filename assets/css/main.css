@@ -172,7 +172,15 @@ body {
 }
 
 .posts {
-	margin-top: 50px;	
+	margin-top: 50px;
+}
+
+.posts .col-md-12 {
+	margin-top: 20px;
+}
+
+.posts .col-md-6 {
+	margin-top: 20px;
 }
 
 .posts .card {
