@@ -5,3 +5,4 @@ _site/
 /.project
 /Gemfile.lock
 /.vendor
+/build.txt~
