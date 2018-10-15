@@ -77,6 +77,9 @@ show_events_on_homepage: true
 # if true, site will be divided with a sidepanel
 sidepanel: true
 
+# if true, news widger will be shown in the sidepanel
+sidepanel_news: true
+
 # news widget url
 news_widget_url: "https://news.tzm.community/widget.html"
 

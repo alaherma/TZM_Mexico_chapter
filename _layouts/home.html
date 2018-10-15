@@ -7,13 +7,15 @@ layout: default
   <div class="row">
   <div class="col-md-4">
 
+  {% if site.sidepanel_news %}
   <!-- NEWS WIDGET -->
   <div class="news_widget">
   <h4>News</h4>
   <iframe src="{{ site.news_widget_url }}" frameborder="0"></iframe>
   </div>
-  <!-- END OF NEWS WIDGET -->
-
+  <!-- END OF NEWS WIDGET --> 
+  {% endif %}
+  
   </div>
   <div class="col-md-8">
   {% endif %}
