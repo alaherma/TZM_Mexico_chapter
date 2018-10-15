@@ -74,6 +74,12 @@ posts_two_col: true
 # if true, links to events will be shown in home page
 show_events_on_homepage: true
 
+# if true, site will be divided with a sidepanel
+sidepanel: true
+
+# news widget url
+news_widget_url: "https://news.tzm.community/widget.html"
+
 defaults:
   - scope:
       path: "assets/img"

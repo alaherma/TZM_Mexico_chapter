@@ -218,6 +218,45 @@ blockquote {
   border-left: 3px solid #ccc;
 } 
 
+.widget {
+	font-size: 80%;	
+}
+
+.widget h5 {
+	font-size: 120%;	
+}
+
+@media (min-width: 576px) {
+	.news_widget {
+		display: none;	
+	}
+
+	.news_widget iframe {
+		height: 200px;
+	}
+}
+
+@media (min-width: 768px) {	
+	.news_widget {
+		display: table;	
+	}
+
+	.news_widget iframe {
+		height: 600px;
+	}
+}
+
+.news_widget iframe {
+	width: 100%;
+}
+
+.news_widget h4 {
+	margin-top: 30px;	
+}
+
+.widget_posts_row {
+	margin-top: 10px;	
+}
 
 // GALLERY
 

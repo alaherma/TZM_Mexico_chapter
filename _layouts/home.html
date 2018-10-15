@@ -2,6 +2,22 @@
 layout: default
 ---
 
+  {% if site.sidepanel %}
+  <!-- SIDEPANEL -->
+  <div class="row">
+  <div class="col-md-4">
+
+  <!-- NEWS WIDGET -->
+  <div class="news_widget">
+  <h4>News</h4>
+  <iframe src="{{ site.news_widget_url }}" frameborder="0"></iframe>
+  </div>
+  <!-- END OF NEWS WIDGET -->
+
+  </div>
+  <div class="col-md-8">
+  {% endif %}
+  
   <!-- CONTENT -->
   {% if site.show_content_on_homepage %}
   <div class="row mb-2 posts">
@@ -63,4 +79,7 @@ layout: default
   {% endif %}
   <!-- END OF POSTS -->
 
-  
+  {% if site.sidepanel %}
+  </div>
+  <!-- SIDEPANEL CLOSING -->  
+  {% endif %}
