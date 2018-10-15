@@ -62,6 +62,9 @@ collections:
 # where to cut a page when showing only excerpt
 excerpt_separator: "<!--more-->"
 
+# if true, index content shown in home page
+show_content_on_homepage: true
+
 # if true, post excerpts will be shown in home page
 show_posts_on_homepage: true
 

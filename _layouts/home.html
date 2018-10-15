@@ -2,6 +2,16 @@
 layout: default
 ---
 
+  <!-- CONTENT -->
+  {% if site.show_content_on_homepage %}
+  <div class="row mb-2 posts">
+     <div class="col-md-12 home_content">
+     {{ content }}
+     </div> 
+  </div>
+  {% endif %}
+  <!-- END OF CONTENT -->
+
   <!-- EVENTS -->
   {% if site.show_events_on_homepage %}
   {% include events.html %}
