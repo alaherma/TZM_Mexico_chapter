@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  {% include base.html %}
+
+  {% include head.html %}
+  <body style="padding: 0px">
+  	<div class="widget">
+  		<div class="widget_title">
+  			{{ site.widget_title }}
+  		</div>
+  		
+	    <div class="container">
+	      {{ content }}
+	    </div>
+	    
+		<!-- POSTS -->
+	  	<div class="row widget_posts">
+		    {% for post in site.posts %}
+		    {% if post.hide==false %}
+	    	<div class="col-md-12 widget_posts_row">
+		        
+			    <div class="widget_card box-shadow h-md-250 widget-teaser">
+		  		 	<header class="posts_item_header">
+			      	   <h5 class="mb-0">
+			              <a class="post-link" href="{{ post.url }}">
+			                {{ post.title }}
+			              </a>
+			           </h5>
+			            <span class="meta small">
+			              {{ post.date | date: "%B %-d, %Y" }}
+			            </span>
+			          </header>		
+			          <div class="widget_content">
+			        	   {{ post.content | strip_html | truncate: "150" }}
+			        	   <a href="{{ site.url }}{{ post.url }}">Read more</a>
+			          </div>
+			    </div>
+			</div>
+			{% endif %}
+		    {% endfor %}
+		</div>
+	</div>
+  </body>
+</html>
