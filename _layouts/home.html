@@ -13,19 +13,19 @@ layout: default
   <h4>News</h4>
   <iframe src="{{ site.news_widget_url }}" frameborder="0"></iframe>
   </div>
-  <!-- END OF NEWS WIDGET --> 
+  <!-- END OF NEWS WIDGET -->
   {% endif %}
-  
+
   </div>
   <div class="col-md-8">
   {% endif %}
-  
+
   <!-- CONTENT -->
   {% if site.show_content_on_homepage %}
   <div class="row mb-2 posts">
      <div class="col-md-12 home_content">
      {{ content }}
-     </div> 
+     </div>
   </div>
   {% endif %}
   <!-- END OF CONTENT -->
@@ -47,9 +47,9 @@ layout: default
   	{% else %}
     <div class="col-md-12 posts_row">
 	{% endif %}
-        
+
 	    <div class="card mb-4 box-shadow h-md-250 post-teaser">
-	      {% if post.thumbnail %} 
+	      {% if post.thumbnail %}
 	      <div class="thumbnail">
 	         <img src="/{{ post.thumbnail }}">
 	      </div>
@@ -83,5 +83,5 @@ layout: default
 
   {% if site.sidepanel %}
   </div>
-  <!-- SIDEPANEL CLOSING -->  
+  <!-- SIDEPANEL CLOSING -->
   {% endif %}

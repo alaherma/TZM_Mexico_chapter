@@ -1,9 +1,9 @@
-    
+
    <!-- Navigation -->
    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
      <div class="container">
       	<a class="navbar-brand" href="{{ base }}/">
-    		<img src="{{ base }}/assets/img/main-logo-small.png" width="30" height="30" alt="">
+    		<img src="{{ base }}/assets/img/tzmlogo_color.png" width="30" height="30" alt="Home">
 		</a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
@@ -12,8 +12,9 @@
          <ul class="navbar-nav ml-auto">
 	        <!-- Auto Generation of NORMAL pages in the navbar -->
 	        {% assign name_page = "" %}
-	        
-	        {% for node in site.pages %}
+
+          {% assign sorted_pages = (site.pages | sort: 'order', 'first') %}
+	        {% for node in sorted_pages %}
 	        {% if node.title and node.hide != true and node.parentid == None %}
 	        {% if name_page contains node.title %}
 	        {% else %}
@@ -24,16 +25,17 @@
 						</a>
 
 		                <ul class="dropdown-menu">
-						{% for cnode in site.pages %}
+            {% assign sorted_subpages = (site.pages | sort: 'order', 'first') %}
+						{% for cnode in sorted_subpages %}
 					        {% if node.menuid != None cnode.title and cnode.hide != true and cnode.parentid == node.menuid %}
 								<li><a class="nav-link" href="{{ base }}{{ cnode.url }}">{{ cnode.title }}</a></li>
 					        {% endif %}
-				        {% endfor %} 		
+				        {% endfor %}
 						</ul>
-                
+
 					</li>
 				{% else %}
-		        	{% if node.url == page.url %} 
+		        	{% if node.url == page.url %}
 		        	<li class="nav-item active">
 					{% else %}
 	    	    	<li class="nav-item">
@@ -43,14 +45,13 @@
 			            </a>
 			        </li>
 				{% endif %}
-				
+
 	        {% endif %}
 	        {% assign name_page = node.title | append: name_page %}
 	        {% endif %}
-	        {% endfor %} 
-	        
+	        {% endfor %}
+
          </ul>
        </div>
      </div>
    </nav>
- 

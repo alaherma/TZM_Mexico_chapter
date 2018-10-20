@@ -4,6 +4,9 @@ title: The Zeitgeist Movement
 # site subtitle
 subtitle: Shire chapter
 
+#chapter_name - used in the About {{chapter_name}} menu option
+chapter_name: Shire
+
 # site description
 description: >- # this means to ignore newlines until "baseurl:"
   Template for the Zeigeist Movement Chapter site.
@@ -36,8 +39,8 @@ alert_text: This is currently an example template page. TZMCommunity template en
 # Assets
 assets:
     sources:
-        - _assets/images          
-        - _assets/stylesheets          
+        - _assets/images
+        - _assets/stylesheets
         - _assets/images/slides
 
 # Social settings
@@ -49,13 +52,20 @@ linkedin_url:
 pinterest_url:
 slack_url:
 twitter_url:
+youtube_url:
+
+#Global TZM URLs:
+tzm_global_facebook_url: "https://www.facebook.com/tzmglobal"
+tzm_global_instagram_url: "https://www.instagram.com/tzmglobal/"
+tzm_global_twitter_url: "https://twitter.com/tzmglobal"
+tzm_global_youtube_url: "https://www.youtube.com/user/TZMOfficialChannel"
 
 # Google Analytics Tracking ID goes here:
 google_analytics:
 
 plugins: [ jekyll-assets, jekyll-seo-tag, jekyll-toc, jekyll-sitemap, jekyll-feed ]
 
-collections: 
+collections:
     events:
         output: true
 
@@ -75,10 +85,10 @@ posts_two_col: true
 show_events_on_homepage: true
 
 # if true, site will be divided with a sidepanel
-sidepanel: true
+#sidepanel: true
 
 # if true, news widger will be shown in the sidepanel
-sidepanel_news: true
+#sidepanel_news: true
 
 # news widget url
 news_widget_url: "https://news.tzm.community/widget.html"
@@ -88,4 +98,3 @@ defaults:
       path: "assets/img"
     values:
       image: true
-      
