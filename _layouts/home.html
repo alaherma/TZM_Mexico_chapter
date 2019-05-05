@@ -40,14 +40,20 @@ layout: default
   {% if site.show_posts_on_homepage %}
 	<!-- POSTS -->
   <div class="row mb-2 posts">
+  	{% assign counter = 0 %}
+  
     {% for post in site.posts %}
-    {% if post.hide==false %}
-	{% if site.posts_two_col %}
+    {% if post.hide==false and counter < site.posts_max_home %}
+	{% if site.posts_two_col == true%}
     <div class="col-md-6 posts_row">
+	{% elsif site.posts_three_col == true %}
+    <div class="col-md-4 posts_row">
   	{% else %}
     <div class="col-md-12 posts_row">
 	{% endif %}
-
+	
+	{% assign counter = counter | plus: 1 %}
+	
 	    <div class="card mb-4 box-shadow h-md-250 post-teaser">
 	      {% if post.thumbnail %}
 	      <div class="thumbnail">

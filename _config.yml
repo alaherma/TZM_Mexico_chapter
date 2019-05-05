@@ -79,7 +79,13 @@ show_content_on_homepage: true
 show_posts_on_homepage: true
 
 # if true, posts will be shown in two columns
-posts_two_col: true
+posts_two_col: false
+
+# if true, posts will be shown in three columns
+posts_three_col: true
+
+# maximum number of posts show on home page
+posts_max_home: 3
 
 # if true, links to events will be shown in home page
 show_events_on_homepage: true
