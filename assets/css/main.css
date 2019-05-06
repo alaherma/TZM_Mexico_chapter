@@ -1,13 +1,15 @@
 
 body {
-  padding-top: 54px;
- }
-
-.container {
-    font-family: 'Roboto', sans-serif;
+	padding-top: 54px;
+	color: #323240;
+	line-height: 1.4;
 }
 
-.container h1, .container h2 {
+.container {
+    font-family: 'Cantarell', sans-serif;
+}
+
+.container h1, .container h2, .container h3 {
     font-family: 'Fjalla One', sans-serif;
 }
 
@@ -148,6 +150,11 @@ body {
 
 .events {
 	margin-top: 20px;	
+	margin-bottom: 20px;
+}
+
+.events h1 {
+	font-size: 2.6rem;	
 }
 
 .event-title {
@@ -193,8 +200,13 @@ body {
 	color: #6c757d!important;
 }
 
+.card {
+  	height: 100%;
+}
+
 .box-shadow {
-	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+	border-color: #f0f0f0;
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .005);
 }
 
 .post-link {
@@ -203,10 +215,6 @@ body {
 
 .toc-entry a {
   color: #343a40!important;
-}
-
-.card {
-  height: 100%;
 }
 
 blockquote {
@@ -335,7 +343,11 @@ blockquote {
 }
 
 .row {
-  margin: 0px;  
+  	margin: 0px;  
+}
+
+.box {
+	border-
 }
 
 .page-footer {
