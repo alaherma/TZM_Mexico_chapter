@@ -99,6 +99,10 @@ show_events_on_homepage: true
 # news widget url
 news_widget_url: "https://news.tzm.community/widget.html"
 
+# are menu titles are clickable links or do they open a menu
+# false works better for mobile clients.
+menu_clickable: false
+
 defaults:
   - scope:
       path: "assets/img"
