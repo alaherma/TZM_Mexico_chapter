@@ -358,3 +358,7 @@ blockquote {
 .dropdown-menu {
   margin: 0px;
 }
+
+.wp-block-image img {
+  width: 100%;
+}
