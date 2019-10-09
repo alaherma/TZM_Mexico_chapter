@@ -13,5 +13,6 @@ gem "jekyll-seo-tag"
 gem "jekyll-toc"
 gem "jekyll-sitemap"
 gem "jekyll-feed"
+gem "jekyll-json-feed"
 
 gem "jekyll", "~> 4.0"
