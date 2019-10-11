@@ -4,6 +4,7 @@ title: News
 permalink: /news/
 tags: [News, Archive]
 order: 3
+hide: false
 ---
 
 {% for post in site.posts %}
