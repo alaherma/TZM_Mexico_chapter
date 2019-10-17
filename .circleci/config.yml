@@ -19,9 +19,6 @@ jobs:
           keys:
             - rubygems-v1-{{ checksum "Gemfile.lock" }}
             - rubygems-v1-fallback
-      - run:
-          name: update bundler
-          command: gem install bundler:2.0.2
       - save_cache:
           key: rubygems-v1-{{ checksum "Gemfile.lock" }}
           paths:
