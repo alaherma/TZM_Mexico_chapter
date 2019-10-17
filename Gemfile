@@ -15,3 +15,5 @@ gem "jekyll-sitemap"
 gem "jekyll-feed"
 
 gem "jekyll", "~> 4.0"
+
+gem "html-proofer"
