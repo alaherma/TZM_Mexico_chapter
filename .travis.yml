@@ -1,2 +1,4 @@
-services:
-  - docker
+# whitelist
+branches:
+  only:
+    - feat_travis
