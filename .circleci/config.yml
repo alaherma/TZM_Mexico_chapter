@@ -6,6 +6,8 @@ jobs:
     <<: *defaults
     docker:
       - image: circleci/ruby:2.6.5
+        environment:
+          BUNDLER_VERSION: 2.0.1    
     branches:
       only:
         - feat_circleci
@@ -18,8 +20,8 @@ jobs:
             - rubygems-v1-{{ checksum "Gemfile.lock" }}
             - rubygems-v1-fallback
       - run:
-          name: Bundle Install
-          command: bundle check || bundle install
+          name: update bundler
+          command: gem install bundler:2.0.2
       - save_cache:
           key: rubygems-v1-{{ checksum "Gemfile.lock" }}
           paths:
