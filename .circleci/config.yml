@@ -47,8 +47,8 @@ jobs:
       enabled: true
     steps:
       - add_ssh_keys:
-        fingerprints:
-          - "6e:c2:06:10:5a:d5:6d:92:83:69:00:07:fd:f5:6f:32"
+          fingerprints:
+            - "6e:c2:06:10:5a:d5:6d:92:83:69:00:07:fd:f5:6f:32"
 
 workflows:
   version: 2
