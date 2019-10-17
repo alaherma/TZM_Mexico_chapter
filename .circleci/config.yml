@@ -49,6 +49,9 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "6e:c2:06:10:5a:d5:6d:92:83:69:00:07:fd:f5:6f:32"
+      - run:
+          name: Upload
+          command: rsync -va --delete ./_site site_builder@tzm.community:/opt/sites/circleci/test
 
 workflows:
   version: 2
