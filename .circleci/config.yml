@@ -46,6 +46,7 @@ jobs:
           paths:
             - _site
   deploy-job:
+    machine: enabled
     steps:
       - add_ssh_keys:
         fingerprints:
