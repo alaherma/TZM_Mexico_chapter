@@ -28,6 +28,9 @@ jobs:
             source $BASH_ENV
             gem install bundler
       - run:
+          name: bundle install
+          command: bundle install
+      - run:
           name: Jekyll build
           command: bundle exec jekyll build
       - run:
