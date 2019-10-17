@@ -57,7 +57,7 @@ jobs:
           command: find | grep -v vendor
       - run:
           name: Upload
-          command: rsync -va --delete ./_site site_builder@tzm.community:/opt/sites/circleci/test
+          command: rsync -va --delete ~/repo/_site site_builder@tzm.community:/opt/sites/circleci/test
 
 workflows:
   version: 2
