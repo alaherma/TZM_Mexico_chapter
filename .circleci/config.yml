@@ -23,9 +23,6 @@ jobs:
       - run:
           name: bundle install
           command: bundle install
-      - run:
-          name: find
-          command: find
       - save_cache:
           key: rubygems-v1-{{ checksum "Gemfile.lock" }}
           paths:
@@ -52,6 +49,12 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "6e:c2:06:10:5a:d5:6d:92:83:69:00:07:fd:f5:6f:32"
+      - run:
+          name: pwd
+          command: pwd
+      - run:
+          name: deploy find
+          command: find | grep -v vendor
       - run:
           name: Upload
           command: rsync -va --delete ./_site site_builder@tzm.community:/opt/sites/circleci/test
