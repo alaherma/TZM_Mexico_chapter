@@ -6,8 +6,6 @@ jobs:
     <<: *defaults
     docker:
       - image: circleci/ruby:2.6.5
-        environment:
-          BUNDLER_VERSION: 2.0.1    
     branches:
       only:
         - feat_circleci
@@ -23,6 +21,12 @@ jobs:
           key: rubygems-v1-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
+      - run
+          name: Configure Bundler
+          command: |
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+            source $BASH_ENV
+            gem install bundler
       - run:
           name: Jekyll build
           command: bundle exec jekyll build
