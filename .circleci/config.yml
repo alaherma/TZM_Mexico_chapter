@@ -9,7 +9,7 @@ jobs:
     environment:
       BUNDLE_PATH: ~/repo/vendor/bundle
     steps:
-      - checkout
+      - checkoutbu
       - restore_cache:
           keys:
             - rubygems-v1-{{ checksum "Gemfile.lock" }}
@@ -22,10 +22,10 @@ jobs:
           command: |
             echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
             source $BASH_ENV
-            gem install bundler
+            gem install -V bundler
       - run:
           name: bundle install
-          command: bundle install
+          command: bundle install -V
       - save_cache:
           key: rubygems-v1-{{ checksum "Gemfile.lock" }}
           paths:
