@@ -15,6 +15,9 @@ jobs:
             - rubygems-v1-{{ checksum "Gemfile.lock" }}
             - rubygems-v1-fallback
       - run:
+          name: debug varialbes
+          command: export
+      - run:
           name: Configure Bundler
           command: |
             echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
@@ -60,7 +63,7 @@ jobs:
           command: find | grep -v vendor
       - run:
           name: Upload
-          command: rsync -va --delete ~/repo/_site/ site_builder@tzm.community:/opt/sites/circleci/test
+          command: rsync -va --delete ~/repo/_site/ site_builder@tzm.community:/opt/sites/circleci/{{ echo $CIRCLE_REPOSITORY_URL | sed -e "s/\./_/g" | sed -e "s/\// /g" | sed -e "s/_git//g" | gawk -S '{ print $2; }' }}
 
 workflows:
   version: 2
