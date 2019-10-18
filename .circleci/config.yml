@@ -9,7 +9,7 @@ jobs:
     environment:
       BUNDLE_PATH: ~/repo/vendor/bundle
     steps:
-      - checkoutbu
+      - checkout
       - restore_cache:
           keys:
             - rubygems-v1-{{ checksum "Gemfile.lock" }}
