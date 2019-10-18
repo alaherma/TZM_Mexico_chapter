@@ -1,0 +1,78 @@
+defaults: &defaults
+  working_directory: ~/repo
+version: 2
+jobs:
+  build:
+    <<: *defaults
+    docker:
+      - image: circleci/ruby:2.6.5
+    environment:
+      BUNDLE_PATH: ~/repo/vendor/bundle
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - rubygems-v1-{{ checksum "Gemfile.lock" }}
+            - rubygems-v1-fallback
+      - run:
+          name: debug varialbes
+          command: export
+      - run:
+          name: Configure Bundler
+          command: |
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+            source $BASH_ENV
+            gem install -V bundler
+      - run:
+          name: bundle install
+          command: bundle install -V
+      - save_cache:
+          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: Jekyll build
+          command: bundle exec jekyll build
+      - run:
+          name: HTMLProofer tests
+          command: |
+            bundle exec htmlproofer ./_site \
+              --allow-hash-href \
+              --check-favicon  \
+              --check-html \
+              --disable-external
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - _site
+  deploy:
+    <<: *defaults
+    machine: 
+      enabled: true
+    steps:
+      - attach_workspace:
+          at: ./
+      - add_ssh_keys:
+          fingerprints:
+            - "6e:c2:06:10:5a:d5:6d:92:83:69:00:07:fd:f5:6f:32"
+      - run:
+          name: pwd
+          command: pwd
+      - run:
+          name: deploy find
+          command: find | grep -v vendor
+      - run:
+          name: Upload
+          command: rsync -va --delete ~/repo/_site/ site_builder@tzm.community:/opt/sites/circleci/$( echo $CIRCLE_REPOSITORY_URL | sed -e "s/\./_/g" | sed -e "s/\// /g" | sed -e "s/_git//g" | gawk -S '{ print $2; }' )
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
