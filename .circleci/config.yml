@@ -75,4 +75,4 @@ workflows:
             - build
           filters:
             branches:
-              only: feat_circleci
+              only: master
