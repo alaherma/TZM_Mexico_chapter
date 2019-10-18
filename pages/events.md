@@ -17,6 +17,6 @@ Events placeholder
        {{ event.title }}
      </a>
    </h2>
-   {{ event.content | truncate: "150"}}
+   {{ event.excerpt }}
 
 {% endfor %}

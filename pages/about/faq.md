@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FAQ
-permalink: /abouttzm/#faq
+permalink: /faq/
 tags: [About, Archive, FAQ]
 parentid: about
 order: 2
