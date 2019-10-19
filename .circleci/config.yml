@@ -12,7 +12,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - rubygems-v1-{{ checksum "Gemfile.lock" }}
+            - rubygems-v1-20191019-{{ checksum "Gemfile.lock" }}
             - rubygems-v1-fallback
       - run:
           name: debug varialbes
@@ -27,7 +27,7 @@ jobs:
           name: bundle install
           command: bundle install -V
       - save_cache:
-          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
+          key: rubygems-v1-20191019-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
       - run:
