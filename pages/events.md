@@ -9,11 +9,12 @@ hide: false
 
 Events placeholder
 
+{% include base.html %}
 
 {% for event in site.events %}
 
    <h2>
-     <a href="{{ event.url }}">
+     <a href="{{ base }}{{ event.url }}">
        {{ event.title }}
      </a>
    </h2>

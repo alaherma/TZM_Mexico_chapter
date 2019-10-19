@@ -7,10 +7,12 @@ order: 3
 hide: false
 ---
 
+{% include base.html %}
+
 {% for post in site.posts %}
 
    <h2>
-     <a href="{{ post.url }}">
+     <a href="{{ base }}{{ post.url }}">
        {{ post.title }}
      </a>
    </h2>

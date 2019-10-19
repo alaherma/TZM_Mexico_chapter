@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+  {% include base.html %}
 
   {% if site.sidepanel %}
   <!-- SIDEPANEL -->
@@ -57,12 +58,12 @@ layout: default
 	    <div class="card mb-4 box-shadow h-md-250 post-teaser">
 	      {% if post.thumbnail %}
 	      <div class="thumbnail">
-	         <img src="/{{ post.thumbnail }}">
+	         <img src="{{ base }}/{{ post.thumbnail }}">
 	      </div>
 	      {% endif %}
   		 	<header class="posts_item_header">
 	      	   <h3 class="mb-0">
-	              <a class="post-link" href="{{ post.url }}">
+	              <a class="post-link" href="{{ base }}{{ post.url }}">
 	                {{ post.title }}
 	              </a>
 	           </h3>
