@@ -56,6 +56,9 @@ jobs:
       - run:
           name: Upload
           command: rsync -va --delete ~/repo/_site/ site_builder@tzm.community:/opt/sites/$( echo $CIRCLE_REPOSITORY_URL | sed -e "s/\./_/g" | sed -e "s/\// /g" | sed -e "s/_git//g" | gawk -S '{ print $2; }' )
+      - run:
+          name: Run IPFS
+          command: ssh site_builder@tzm.community bash doipfs.sh
 
 workflows:
   version: 2
