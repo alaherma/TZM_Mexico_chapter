@@ -1,4 +1,0 @@
-# whitelist
-branches:
-  only:
-    - feat_travis
