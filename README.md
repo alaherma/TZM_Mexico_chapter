@@ -1,4 +1,5 @@
-This is an implementation of ## chapter.site.template 
+This is an implementation of 
+## chapter.site.template 
 ![:octocat:](https://assets-cdn.github.com/images/icons/emoji/octocat.png ":octocat:")The Project has been started by [Juuso (jeukku)](https://github.com/jeukku) in order to form a template example   
 that could be used across The Zeitgeist Movement Chapters' websites hosted on any GitHub Repository.
 
