@@ -1,4 +1,4 @@
-This is an implementation of ![:octocat:](https://assets-cdn.github.com/images/icons/emoji/octocat.png ":chapter.site.template:"), started by [Juuso (jeukku)](https://github.com/jeukku)
+This is an implementation of ["chapter.site.template"](https://github.com/TZMCommunity/chapter.site.template), started by [Juuso (jeukku)](https://github.com/jeukku)
 
 ## The Project's main structure
 
