@@ -249,17 +249,24 @@ blockquote {
 		display: table;	
 	}
 
-	.news_widget iframe {
+	.news_widget {
 		height: 600px;
 	}
 }
 
-.news_widget iframe {
-	width: 100%;
+.news_widget {
+	margin-top: 10px;
+  font-size: 90%;
 }
 
 .news_widget h4 {
-	margin-top: 30px;	
+	margin-top: 30px;
+  font-weight: 900;
+}
+
+.tzm-news-header {
+  font-weight: 900;
+  margin-top: 5px;
 }
 
 .widget_posts_row {
